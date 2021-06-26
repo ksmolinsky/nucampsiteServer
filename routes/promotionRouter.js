@@ -63,7 +63,7 @@ promotionRouter.route('/:promotionId')
     .catch(err => next(err));
 })
 .delete( (req, res, next) => {
-    Promotion.findByIdAndDelet(req.params.promotionId)
+    Promotion.findByIdAndDelete(req.params.promotionId)
     .then(response => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');

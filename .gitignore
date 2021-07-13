@@ -2,3 +2,4 @@ node_modules
 githublink.txt
 bin/server.cert
 bin/server.key
+config.js
